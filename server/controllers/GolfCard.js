@@ -59,7 +59,7 @@ const makeGolfCard = (req, res) => {
     const parIndex = `hole${i}Par`;
     const yardsIndex = `hole${i}Yards`;
     const scoreIndex = `hole${i}Score`;
-    
+
     // Casts the string values into integers then adds to totals
     holesObj.parTotal += parseInt(`${req.body[parIndex]}`, 10);
     holesObj.yardsTotal += parseInt(`${req.body[yardsIndex]}`, 10);
