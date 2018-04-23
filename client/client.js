@@ -29,6 +29,7 @@ $(document).ready(() => {
   $('select').material_select();
   $('.collapsible').collapsible();
 
+    /*
   // Sign up Button Event
   $('#signUpBtn').on('click', (e) => {
     e.preventDefault();
@@ -68,6 +69,7 @@ $(document).ready(() => {
 
     return false;
   });
+  */
 
   // Card Submit Button Event
   $('#cardSubmitButton').on('click', (e) => {
