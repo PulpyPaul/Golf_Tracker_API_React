@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>DomoMaker</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css"  media="screen,projection"/>
+  <link rel="shortcut icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+</head>
+<body>
+  <nav class="green darken-2">
+    <div class="nav-wrapper">
+      <img src="../assets/img/golfBall.png" alt="golfBall" class="golfBall"/>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/info">Info</a></li>
+        <li><a href="/signup">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1 class="container center-align" id="golfHeader">Golf Tracker</h1>
+  <section id="login">
+    <form id="loginForm" name="loginForm" action="/login" method="POST" class="mainForm container">
+      <label for="username">Username: </label>
+      <input id="user" type="text" name="username" placeholder="username"/>
+      <label for="pass">Password: </label>
+      <input id="pass" type="password" name="pass" placeholder="password"/>
+      <input type="hidden" name="_csrf" value={{csrfToken}} />
+      <div class="container center-align">
+      <a class="waves-effect waves-light btn green darken-2" type="submit" value="Sign In" id="loginBtn">Sign In</a>
+      </div>
+    </form>
+  </section>
+  <h3><span id="errorMessage"></span></h3>
+    <script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+  <script src="/assets/js/bundle.js"></script>
+</body>
+</html>

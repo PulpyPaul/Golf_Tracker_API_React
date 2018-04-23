@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "GolfFont";
+    src:url("../fonts/golf/jlreasytees.ttf");
+}
+
+nav div {
+    margin-left: 20px;
+}
+
+#golfHeader {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+}
+
+#golfCardForm {
+    padding: 10px;
+    border-color: #388e3c;
+    border-style: solid;
+    border-width: thin;
+}
+
+#cardSubmitContainer {
+    margin-top: 10px;
+}
+
+.parSelect {
+    margin-top: 0px;
+}
+
+h1 {
+    font-family: GolfFont;
+    font-size: 80px;
+}
+
+.golfBall {
+    height: 60px;
+    width: 60px;
+}
