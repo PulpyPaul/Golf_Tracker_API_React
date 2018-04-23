@@ -37,15 +37,14 @@ const LoginWindow = (props) => {
           onSubmit={handleLogin}
           action="/login"
           method="POST"
-          className="mainForm"
+          className="mainForm container"
     >
     <label htmlFor="username">Username: </label>
     <input id="user" type="text" name="username" placeholder="username" />
     <label htmlFor="pass">Password: </label>
     <input id="pass" type="password" name="pass" placeholder="password" />
     <input type="hidden" name="_csrf" value={props.csrf}/>
-    <input className="formSubmit" type="submit" value="Sign in" />
-            
+    <div><Button waves='light' type="submit" value="Sign In" id="loginBtn">Sign In</Button></div>
     </form>
     );
 };
@@ -57,7 +56,7 @@ const SignupWindow = (props) => {
         onSubmit={handleSignup}
         action="/signup"
         method="POST"
-        className="mainForm"
+        className="mainForm container"
     >
         <label htmlFor="username">Username: </label>
         <input id="user" type="text" name="username" placeholder="username" />

@@ -40,7 +40,7 @@ var LoginWindow = function LoginWindow(props) {
             onSubmit: handleLogin,
             action: "/login",
             method: "POST",
-            className: "mainForm"
+            className: "mainForm container"
         },
         React.createElement(
             "label",
@@ -55,7 +55,15 @@ var LoginWindow = function LoginWindow(props) {
         ),
         React.createElement("input", { id: "pass", type: "password", name: "pass", placeholder: "password" }),
         React.createElement("input", { type: "hidden", name: "_csrf", value: props.csrf }),
-        React.createElement("input", { className: "formSubmit", type: "submit", value: "Sign in" })
+        React.createElement(
+            "div",
+            null,
+            React.createElement(
+                Button,
+                { waves: "light", type: "submit", value: "Sign In", id: "loginBtn" },
+                "Sign In"
+            )
+        )
     );
 };
 
@@ -67,7 +75,7 @@ var SignupWindow = function SignupWindow(props) {
             onSubmit: handleSignup,
             action: "/signup",
             method: "POST",
-            className: "mainForm"
+            className: "mainForm container"
         },
         React.createElement(
             "label",
@@ -151,4 +159,9 @@ var sendAjax = function sendAjax(type, action, data, success) {
             handleError(messageObj.error);
         }
     });
+};
+
+var initializeMaterialize = function initializeMaterialize() {
+    $('select').material_select();
+    $('.collapsible').collapsible();
 };

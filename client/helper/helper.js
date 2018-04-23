@@ -1,4 +1,3 @@
-
 const handleError = (message) => {
     $("#errorMessage").text(message);
 };
@@ -20,4 +19,9 @@ const sendAjax = (type, action, data, success) => {
             handleError(messageObj.error);
         }
     });
+};
+
+const initializeMaterialize = () => {
+  $('select').material_select();
+  $('.collapsible').collapsible();
 };
