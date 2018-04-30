@@ -16,17 +16,17 @@ const makerPage = (req, res) => {
 
 // Gets the golf cards from the server
 const getCards = (request, response) => {
-    const req = request;
-    const res = response;
-    
-    return GolfCard.GolfCardModel.findByOwner(req.session.account._id, (err, docs) => {
-        if (err) {
-            console.log(err);
-            return res.status(400).json({ error: 'An error ocurred' });
-        }
-        
-        return res.json({ golfCards: docs });
-    });
+  const req = request;
+  const res = response;
+
+  return GolfCard.GolfCardModel.findByOwner(req.session.account._id, (err, docs) => {
+    if (err) {
+      console.log(err);
+      return res.status(400).json({ error: 'An error ocurred' });
+    }
+
+    return res.json({ golfCards: docs });
+  });
 };
 
 // Serves the info page
