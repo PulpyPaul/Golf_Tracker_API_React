@@ -614,7 +614,6 @@ var CardForm = function CardForm(props) {
     return React.createElement(
         "form",
         { id: "golfCardForm",
-            onClick: handleCard,
             name: "golfCardForm",
             action: "/maker",
             method: "POST",
@@ -1587,7 +1586,7 @@ var CardForm = function CardForm(props) {
             { className: "container center-align", id: "cardSubmitContainer" },
             React.createElement(
                 "a",
-                { className: "waves-effect waves-light btn green darken-2", type: "submit", id: "cardSubmitButton" },
+                { className: "waves-effect waves-light btn green darken-2", type: "submit", id: "cardSubmitButton", onClick: handleCard },
                 "Make Golf Card"
             )
         )

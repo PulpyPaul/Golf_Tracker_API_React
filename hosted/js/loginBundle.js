@@ -4,7 +4,7 @@ var handleLogin = function handleLogin(e) {
     e.preventDefault();
 
     if ($("#user").val() == '' || $("#pass").val() == '') {
-        handleError("RAWR! Username or password is empty");
+        Materialize.toast('Username or password is empty!', 3000);
         return false;
     }
 
@@ -19,12 +19,12 @@ var handleSignup = function handleSignup(e) {
     e.preventDefault();
 
     if ($("#user").val() == '' || $("#pass").val() == '' || $("#pass2").val() == '') {
-        handleError("RAWR! All fields are required");
+        Materialize.toast('All fields are required', 3000);
         return false;
     }
 
     if ($("#pass").val() !== $("#pass2").val()) {
-        handleError("RAWR! Passwords do not match");
+        Materialize.toast('Passwords do not match!', 3000);
         return false;
     }
 
@@ -37,7 +37,6 @@ var LoginWindow = function LoginWindow(props) {
     return React.createElement(
         "form",
         { id: "loginForm", name: "loginForm",
-            onSubmit: handleLogin,
             action: "/login",
             method: "POST",
             className: "mainForm container"
@@ -55,7 +54,15 @@ var LoginWindow = function LoginWindow(props) {
         ),
         React.createElement("input", { id: "pass", type: "password", name: "pass", placeholder: "password" }),
         React.createElement("input", { type: "hidden", name: "_csrf", value: props.csrf }),
-        React.createElement("input", { type: "submit", value: "Sign In", id: "loginBtn" })
+        React.createElement(
+            "div",
+            { className: "container center-align" },
+            React.createElement(
+                "a",
+                { className: "waves-effect waves-light btn green darken-2", type: "submit", id: "loginBtn", onClick: handleLogin },
+                "Login"
+            )
+        )
     );
 };
 
@@ -64,7 +71,6 @@ var SignupWindow = function SignupWindow(props) {
         "form",
         { id: "signupForm",
             name: "signupForm",
-            onSubmit: handleSignup,
             action: "/signup",
             method: "POST",
             className: "mainForm container"
@@ -88,7 +94,15 @@ var SignupWindow = function SignupWindow(props) {
         ),
         React.createElement("input", { id: "pass2", type: "password", name: "pass2", placeholder: "retype password" }),
         React.createElement("input", { type: "hidden", name: "_csrf", value: props.csrf }),
-        React.createElement("input", { className: "formSubmit", type: "submit", value: "Sign Up" })
+        React.createElement(
+            "div",
+            { className: "container center-align" },
+            React.createElement(
+                "a",
+                { className: "waves-effect waves-light btn green darken-2", type: "submit", onClick: handleSignup },
+                "Sign Up"
+            )
+        )
     );
 };
 

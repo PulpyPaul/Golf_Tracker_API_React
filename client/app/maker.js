@@ -209,7 +209,6 @@ const handleCard = (e) => {
 const CardForm = (props) => {
     return (
         <form id="golfCardForm"
-              onClick={handleCard}
               name="golfCardForm"
               action="/maker"
               method="POST"
@@ -574,7 +573,7 @@ const CardForm = (props) => {
         <div className="divider"></div>
         <input type="hidden" name="_csrf" value={props.csrf} />
         <div className="container center-align" id="cardSubmitContainer">
-        <a className="waves-effect waves-light btn green darken-2" type="submit" id="cardSubmitButton">Make Golf Card</a>
+        <a className="waves-effect waves-light btn green darken-2" type="submit" id="cardSubmitButton" onClick={handleCard}>Make Golf Card</a>
         </div>
         </form>
     );

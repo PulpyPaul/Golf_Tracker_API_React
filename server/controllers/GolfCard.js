@@ -27,11 +27,9 @@ const cardPage = (req, res) => {
 };
 
 // Gets the golf cards from the server
-const getCards = (response, request) => {
+const getCards = (request, response) => {
     const req = request;
     const res = response;
-    
-    console.log(req);
     
     return GolfCard.GolfCardModel.findByOwner(req.session.account._id, (err, docs) => {
         if (err) {

@@ -2,7 +2,7 @@ const handleLogin = (e) => {
     e.preventDefault();
     
     if ($("#user").val() == '' || $("#pass").val() == '') {
-        handleError("RAWR! Username or password is empty");
+        Materialize.toast('Username or password is empty!', 3000);
         return false;
     }
     
@@ -17,12 +17,12 @@ const handleSignup = (e) => {
     e.preventDefault();
     
     if ($("#user").val() == '' || $("#pass").val() == '' || $("#pass2").val() == '') {
-        handleError("RAWR! All fields are required");
+        Materialize.toast('All fields are required', 3000);
         return false;
     }
     
     if ($("#pass").val() !== $("#pass2").val()) {
-        handleError("RAWR! Passwords do not match");
+        Materialize.toast('Passwords do not match!', 3000);
         return false;
     }
     
@@ -34,7 +34,6 @@ const handleSignup = (e) => {
 const LoginWindow = (props) => {
     return (
     <form id="loginForm" name="loginForm"
-          onSubmit={handleLogin}
           action="/login"
           method="POST"
           className="mainForm container"
@@ -44,7 +43,9 @@ const LoginWindow = (props) => {
     <label htmlFor="pass">Password: </label>
     <input id="pass" type="password" name="pass" placeholder="password" />
     <input type="hidden" name="_csrf" value={props.csrf}/>
-    <input type="submit" value="Sign In" id="loginBtn"/>
+    <div className="container center-align">
+    <a className="waves-effect waves-light btn green darken-2" type="submit" id="loginBtn" onClick={handleLogin}>Login</a>
+    </div>
     </form>
     );
 };
@@ -53,7 +54,6 @@ const SignupWindow = (props) => {
     return (
     <form id="signupForm"
         name="signupForm"
-        onSubmit={handleSignup}
         action="/signup"
         method="POST"
         className="mainForm container"
@@ -65,7 +65,9 @@ const SignupWindow = (props) => {
         <label htmlFor="pass2">Password: </label>
         <input id="pass2" type="password" name="pass2" placeholder="retype password" />
         <input type="hidden" name="_csrf" value={props.csrf} />
-        <input className="formSubmit" type="submit" value="Sign Up" />
+        <div className="container center-align">
+        <a className="waves-effect waves-light btn green darken-2" type="submit" onClick={handleSignup}>Sign Up</a>
+        </div>
     </form>
     );
 };
