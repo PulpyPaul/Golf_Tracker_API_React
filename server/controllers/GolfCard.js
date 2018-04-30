@@ -14,18 +14,6 @@ const makerPage = (req, res) => {
   });
 };
 
-// Servers the card data page
-const cardPage = (req, res) => {
-  GolfCard.GolfCardModel.findByOwner(req.session.account._id, (err, docs) => {
-    if (err) {
-      console.log(err);
-      return res.status(400).json({ error: 'An error occurred' });
-    }
-
-    return res.render('cardData', { csrfToken: req.csrfToken(), golfCards: docs });
-  });
-};
-
 // Gets the golf cards from the server
 const getCards = (request, response) => {
     const req = request;
@@ -118,6 +106,5 @@ const makeGolfCard = (req, res) => {
 // Exports
 module.exports.makerPage = makerPage;
 module.exports.make = makeGolfCard;
-module.exports.cardPage = cardPage;
 module.exports.infoPage = infoPage;
 module.exports.getCards = getCards;

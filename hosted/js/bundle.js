@@ -671,31 +671,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole1Par", name: "hole1Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole1Par", name: "hole1Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -722,31 +718,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole2Par", name: "hole2Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole2Par", name: "hole2Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -773,31 +765,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole3Par", name: "hole3Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole3Par", name: "hole3Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -824,31 +812,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole4Par", name: "hole4Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole4Par", name: "hole4Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -875,31 +859,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole5Par", name: "hole5Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole5Par", name: "hole5Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -926,31 +906,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole6Par", name: "hole6Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole6Par", name: "hole6Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -977,31 +953,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole7Par", name: "hole7Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole7Par", name: "hole7Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1028,31 +1000,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole8Par", name: "hole8Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole8Par", name: "hole8Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1079,31 +1047,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole9Par", name: "hole9Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole9Par", name: "hole9Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1130,31 +1094,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole10Par", name: "hole10Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole10Par", name: "hole10Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1181,31 +1141,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole11Par", name: "hole11Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole11Par", name: "hole11Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1232,31 +1188,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole12Par", name: "hole12Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole12Par", name: "hole12Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1283,31 +1235,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole13Par", name: "hole13Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole13Par", name: "hole13Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1334,31 +1282,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole14Par", name: "hole14Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole14Par", name: "hole14Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1385,31 +1329,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole15Par", name: "hole15Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole15Par", name: "hole15Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1436,31 +1376,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole16Par", name: "hole16Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole16Par", name: "hole16Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1487,31 +1423,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole17Par", name: "hole17Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole17Par", name: "hole17Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),
@@ -1538,31 +1470,27 @@ var CardForm = function CardForm(props) {
                         "td",
                         null,
                         React.createElement(
-                            "div",
-                            { className: "input-field col s6 valign-wrapper parSelect" },
+                            "select",
+                            { id: "hole18Par", name: "hole18Par", className: "input-field col s6 valign-wrapper parSelect" },
                             React.createElement(
-                                "select",
-                                { id: "hole18Par", name: "hole18Par" },
-                                React.createElement(
-                                    "option",
-                                    { value: "3" },
-                                    "Par 3"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "4" },
-                                    "Par 4"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "5" },
-                                    "Par 5"
-                                ),
-                                React.createElement(
-                                    "option",
-                                    { value: "6" },
-                                    "Par 6"
-                                )
+                                "option",
+                                { value: "3" },
+                                "Par 3"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "4" },
+                                "Par 4"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "5" },
+                                "Par 5"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "6" },
+                                "Par 6"
                             )
                         )
                     ),

@@ -229,14 +229,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>1</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole1Par" name="hole1Par">
+                        <select id="hole1Par" name="hole1Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole1Yards" className="valign-wrapper" type="number" name="hole1Yards" placeholder="Yards"/>
@@ -248,14 +246,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>2</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole2Par" name="hole2Par">
+                        <select id="hole2Par" name="hole2Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole2Yards" className="valign-wrapper" type="number" name="hole2Yards" placeholder="Yards"/>
@@ -267,14 +263,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>3</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole3Par" name="hole3Par">
+                        <select id="hole3Par" name="hole3Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole3Yards" className="valign-wrapper" type="number" name="hole3Yards" placeholder="Yards"/>
@@ -286,14 +280,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>4</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole4Par" name="hole4Par">
+                        <select id="hole4Par" name="hole4Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole4Yards" className="valign-wrapper" type="number" name="hole4Yards" placeholder="Yards"/>
@@ -305,14 +297,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>5</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole5Par" name="hole5Par">
+                        <select id="hole5Par" name="hole5Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole5Yards" className="valign-wrapper" type="number" name="hole5Yards" placeholder="Yards"/>
@@ -324,14 +314,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>6</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole6Par" name="hole6Par">
+                        <select id="hole6Par" name="hole6Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole6Yards" className="valign-wrapper" type="number" name="hole6Yards" placeholder="Yards"/>
@@ -343,14 +331,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>7</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole7Par" name="hole7Par">
+                        <select id="hole7Par" name="hole7Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole7Yards" className="valign-wrapper" type="number" name="hole7Yards" placeholder="Yards"/>
@@ -362,14 +348,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>8</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole8Par" name="hole8Par">
+                        <select id="hole8Par" name="hole8Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole8Yards" className="valign-wrapper" type="number" name="hole8Yards" placeholder="Yards"/>
@@ -381,14 +365,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>9</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole9Par" name="hole9Par">
+                        <select id="hole9Par" name="hole9Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole9Yards" className="valign-wrapper" type="number" name="hole9Yards" placeholder="Yards"/>
@@ -400,14 +382,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>10</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole10Par" name="hole10Par">
+                        <select id="hole10Par" name="hole10Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole10Yards" className="valign-wrapper" type="number" name="hole10Yards" placeholder="Yards"/>
@@ -419,14 +399,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>11</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole11Par" name="hole11Par">
+                        <select id="hole11Par" name="hole11Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole11Yards" className="valign-wrapper" type="number" name="hole11Yards" placeholder="Yards"/>
@@ -438,14 +416,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>12</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole12Par" name="hole12Par">
+                        <select id="hole12Par" name="hole12Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole12Yards" className="valign-wrapper" type="number" name="hole12Yards" placeholder="Yards"/>
@@ -457,14 +433,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>13</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole13Par" name="hole13Par">
+                        <select id="hole13Par" name="hole13Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole13Yards" className="valign-wrapper" type="number" name="hole13Yards" placeholder="Yards"/>
@@ -476,14 +450,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>14</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole14Par" name="hole14Par">
+                        <select id="hole14Par" name="hole14Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole14Yards" className="valign-wrapper" type="number" name="hole14Yards" placeholder="Yards"/>
@@ -495,14 +467,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>15</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole15Par" name="hole15Par">
+                        <select id="hole15Par" name="hole15Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole15Yards" className="valign-wrapper" type="number" name="hole15Yards" placeholder="Yards"/>
@@ -514,14 +484,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>16</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole16Par" name="hole16Par">
+                        <select id="hole16Par" name="hole16Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole16Yards" className="valign-wrapper" type="number" name="hole16Yards" placeholder="Yards"/>
@@ -533,14 +501,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>17</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole17Par" name="hole17Par">
+                        <select id="hole17Par" name="hole17Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole17Yards" className="valign-wrapper" type="number" name="hole17Yards" placeholder="Yards"/>
@@ -552,14 +518,12 @@ const CardForm = (props) => {
                 <tr>
                     <td>18</td>
                     <td>
-                        <div className="input-field col s6 valign-wrapper parSelect">
-                        <select id="hole18Par" name="hole18Par">
+                        <select id="hole18Par" name="hole18Par" className="input-field col s6 valign-wrapper parSelect">
                             <option value="3">Par 3</option>
                             <option value="4">Par 4</option>
                             <option value="5">Par 5</option>
                             <option value="6">Par 6</option>
                         </select>
-                        </div>      
                     </td>
                     <td>
                         <input id="hole18Yards" className="valign-wrapper" type="number" name="hole18Yards" placeholder="Yards"/>
