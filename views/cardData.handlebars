@@ -2,8 +2,12 @@
 <head>
   <meta charset="utf-8"/>
   <title>Golf Tracker</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+  <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css"  media="screen,projection"/>
   <link rel="shortcut icon" href="/assets/img/favicon.png"/>
@@ -21,161 +25,8 @@
     </div>
   </nav>
   <h1 class="container center-align" id="golfHeader">Golf Tracker</h1>
-  <section id="golfCards">
-    <div class="golfCard container">
-        {{#if golfCards}}
-            {{#each golfCards}}
-            <div class="row center-align">
-                <div class="col s6 offset-s3">
-                  <div class="card green darken-2">
-                    <div class="card-content white-text">
-                      <span class="card-title">{{this.courseName}}</span>
-                        <table class="white-text">
-                            <thead>
-                                <tr>
-                                    <th>Hole</th>
-                                    <th>Par</th>
-                                    <th>Yards</th>
-                                    <th>Score</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>{{this.holes.number.[0].par}}</td>
-                                    <td>{{this.holes.number.[0].yards}}</td>
-                                    <td>{{this.holes.number.[0].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>{{this.holes.number.[1].par}}</td>
-                                    <td>{{this.holes.number.[1].yards}}</td>
-                                    <td>{{this.holes.number.[1].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>{{this.holes.number.[2].par}}</td>
-                                    <td>{{this.holes.number.[2].yards}}</td>
-                                    <td>{{this.holes.number.[2].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>{{this.holes.number.[3].par}}</td>
-                                    <td>{{this.holes.number.[3].yards}}</td>
-                                    <td>{{this.holes.number.[3].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>{{this.holes.number.[4].par}}</td>
-                                    <td>{{this.holes.number.[4].yards}}</td>
-                                    <td>{{this.holes.number.[4].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>{{this.holes.number.[5].par}}</td>
-                                    <td>{{this.holes.number.[5].yards}}</td>
-                                    <td>{{this.holes.number.[5].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>{{this.holes.number.[6].par}}</td>
-                                    <td>{{this.holes.number.[6].yards}}</td>
-                                    <td>{{this.holes.number.[6].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>{{this.holes.number.[7].par}}</td>
-                                    <td>{{this.holes.number.[7].yards}}</td>
-                                    <td>{{this.holes.number.[7].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>{{this.holes.number.[8].par}}</td>
-                                    <td>{{this.holes.number.[8].yards}}</td>
-                                    <td>{{this.holes.number.[8].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>{{this.holes.number.[9].par}}</td>
-                                    <td>{{this.holes.number.[9].yards}}</td>
-                                    <td>{{this.holes.number.[9].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td>{{this.holes.number.[10].par}}</td>
-                                    <td>{{this.holes.number.[10].yards}}</td>
-                                    <td>{{this.holes.number.[10].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td>{{this.holes.number.[11].par}}</td>
-                                    <td>{{this.holes.number.[11].yards}}</td>
-                                    <td>{{this.holes.number.[11].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td>{{this.holes.number.[12].par}}</td>
-                                    <td>{{this.holes.number.[12].yards}}</td>
-                                    <td>{{this.holes.number.[12].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>14</td>
-                                    <td>{{this.holes.number.[13].par}}</td>
-                                    <td>{{this.holes.number.[13].yards}}</td>
-                                    <td>{{this.holes.number.[13].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>15</td>
-                                    <td>{{this.holes.number.[14].par}}</td>
-                                    <td>{{this.holes.number.[14].yards}}</td>
-                                    <td>{{this.holes.number.[14].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>16</td>
-                                    <td>{{this.holes.number.[15].par}}</td>
-                                    <td>{{this.holes.number.[15].yards}}</td>
-                                    <td>{{this.holes.number.[15].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>17</td>
-                                    <td>{{this.holes.number.[16].par}}</td>
-                                    <td>{{this.holes.number.[16].yards}}</td>
-                                    <td>{{this.holes.number.[16].score}}</td>
-                                </tr>
-                                <tr>
-                                    <td>18</td>
-                                    <td>{{this.holes.number.[17].par}}</td>
-                                    <td>{{this.holes.number.[17].yards}}</td>
-                                    <td>{{this.holes.number.[17].score}}</td>
-                                </tr>
-                            </tbody>
-                            <thead>
-                              <tr>
-                                <th>Totals</th>
-                                <th>Par</th>
-                                <th>Yards</th>
-                                <th>Score</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>18</td>
-                                <td>{{this.holes.parTotal}}</td>
-                                <td>{{this.holes.yardsTotal}}</td>
-                                <td>{{this.holes.scoreTotal}}</td>
-                              </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                 </div>
-                </div>
-            </div>    
-            {{/each}}
-        {{else}}
-            <h3 class="emptyGolfCard">You have no saved cards!</h3>
-        {{/if}}
-    </div>
-  </section>
+  <section id="makeCard"></section>
+  <section id="reactCards"></section>
   <h3><span id="errorMessage"></span></h3>
   <script src="/assets/js/bundle.js"></script>
 </body>
