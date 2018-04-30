@@ -1,9 +1,11 @@
+// Templated object used for rendering a chart
 const ChartCanvas = (props) => {
     return (
         <canvas id="chart" width="200" height="200"></canvas>
     );
 };
 
+// Renders a line chart to the document
 const createLineChartCanvas = (data) => {
     ReactDOM.render(
         <ChartCanvas />,
@@ -13,6 +15,7 @@ const createLineChartCanvas = (data) => {
     loadCardData("line");
 };
 
+// Renders a bar chart to the document
 const createBarChartCanvas = (data) => {
     ReactDOM.render(
         <ChartCanvas />,
@@ -22,6 +25,7 @@ const createBarChartCanvas = (data) => {
     loadCardData("bar");
 };
 
+// Renders a pie chart to the document
 const createPieChartCanvas = (data) => {
     ReactDOM.render(
         <ChartCanvas />,
@@ -31,6 +35,7 @@ const createPieChartCanvas = (data) => {
     loadCardData("pie");
 };
 
+// Creates a line chart
 const createLineChart = (ctx, data) => {
   
  var labels = [];
@@ -61,6 +66,7 @@ const createLineChart = (ctx, data) => {
   });
 };
 
+// Creates a bar chart
 const createBarChart = (ctx, data) => {
   
  var labels = [];
@@ -91,6 +97,7 @@ const createBarChart = (ctx, data) => {
   });
 };
 
+// Creates a pie chart
 const createPieChart = (ctx, data) => {
   
  var labels = [];
@@ -121,6 +128,7 @@ const createPieChart = (ctx, data) => {
   });
 };
 
+// Loads data and creates a chart based on a given type
 const loadCardData = (type) => {
     sendAjax('GET', '/getCards', null, (data) => {
         const cardData = data.golfCards;
@@ -142,6 +150,7 @@ const loadCardData = (type) => {
     });
 };
 
+// Hooks up buttons for loading different charts
 const setup = (csrf) => {
     const lineChartButton = document.querySelector("#lineChartBtn");
     const barChartButton = document.querySelector("#barChartBtn");
@@ -166,12 +175,14 @@ const setup = (csrf) => {
     });
 };
 
+// Get session token
 const getToken = () => {
     sendAjax('GET', '/getToken', null, (result) => {
         setup(result.csrfToken);
     });
 };
 
+// Initializes document
 $(document).ready(function() {
     getToken();
 });

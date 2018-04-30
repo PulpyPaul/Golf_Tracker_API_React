@@ -1,3 +1,4 @@
+// Creates a list of cards based on the database data
 const CardList = function(props) {
     if (props.golfCards.length === 0) {
         return (
@@ -7,6 +8,7 @@ const CardList = function(props) {
         );
     }
     
+    // Templated function for each card
     const cardNodes = props.golfCards.map(function(golfCard) {
         return (
             <div key={golfCard._id}>
@@ -166,6 +168,7 @@ const CardList = function(props) {
     );
 };
 
+// Loads the cards from the server
 const loadCardsFromServer = () => {
     sendAjax('GET', '/getCards', null, (data) => {
         ReactDOM.render(
@@ -174,6 +177,7 @@ const loadCardsFromServer = () => {
     });
 };
 
+// Handles a card submission
 const handleCard = (e) => {
      e.preventDefault();
 
@@ -206,6 +210,7 @@ const handleCard = (e) => {
     return false;
 };
 
+// Templated form for a card submission
 const CardForm = (props) => {
     return (
         <form id="golfCardForm"
@@ -543,6 +548,7 @@ const CardForm = (props) => {
     );
 };
 
+// Renders the form and card to the screen
 const setup = function(csrf) {
     ReactDOM.render(
         <CardForm csrf={csrf} />, document.querySelector("#makeCard")
@@ -555,12 +561,14 @@ const setup = function(csrf) {
     loadCardsFromServer();
 };
 
+// Gets session token
 const getToken = () => {
     sendAjax('GET', '/getToken', null, (result) => {
         setup(result.csrfToken);
     });
 };
 
+// Initializes page
 $(document).ready(function() {
     getToken();
 });

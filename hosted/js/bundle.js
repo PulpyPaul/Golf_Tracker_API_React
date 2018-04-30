@@ -1,5 +1,6 @@
 "use strict";
 
+// Creates a list of cards based on the database data
 var CardList = function CardList(props) {
     if (props.golfCards.length === 0) {
         return React.createElement(
@@ -13,6 +14,7 @@ var CardList = function CardList(props) {
         );
     }
 
+    // Templated function for each card
     var cardNodes = props.golfCards.map(function (golfCard) {
         return React.createElement(
             "div",
@@ -572,12 +574,14 @@ var CardList = function CardList(props) {
     );
 };
 
+// Loads the cards from the server
 var loadCardsFromServer = function loadCardsFromServer() {
     sendAjax('GET', '/getCards', null, function (data) {
         ReactDOM.render(React.createElement(CardList, { golfCards: data.golfCards }), document.querySelector("#reactCards"));
     });
 };
 
+// Handles a card submission
 var handleCard = function handleCard(e) {
     e.preventDefault();
 
@@ -610,6 +614,7 @@ var handleCard = function handleCard(e) {
     return false;
 };
 
+// Templated form for a card submission
 var CardForm = function CardForm(props) {
     return React.createElement(
         "form",
@@ -1521,6 +1526,7 @@ var CardForm = function CardForm(props) {
     );
 };
 
+// Renders the form and card to the screen
 var setup = function setup(csrf) {
     ReactDOM.render(React.createElement(CardForm, { csrf: csrf }), document.querySelector("#makeCard"));
 
@@ -1529,12 +1535,14 @@ var setup = function setup(csrf) {
     loadCardsFromServer();
 };
 
+// Gets session token
 var getToken = function getToken() {
     sendAjax('GET', '/getToken', null, function (result) {
         setup(result.csrfToken);
     });
 };
 
+// Initializes page
 $(document).ready(function () {
     getToken();
 });

@@ -1,3 +1,4 @@
+// Handles login submission
 const handleLogin = (e) => {
     e.preventDefault();
     
@@ -13,6 +14,7 @@ const handleLogin = (e) => {
     return false;
 };
 
+// Handles sign up submission
 const handleSignup = (e) => {
     e.preventDefault();
     
@@ -31,6 +33,7 @@ const handleSignup = (e) => {
     return false;
 };
 
+// Login form used for react
 const LoginWindow = (props) => {
     return (
     <form id="loginForm" name="loginForm"
@@ -50,6 +53,7 @@ const LoginWindow = (props) => {
     );
 };
 
+// Sign up form used for react
 const SignupWindow = (props) => {
     return (
     <form id="signupForm"
@@ -72,6 +76,7 @@ const SignupWindow = (props) => {
     );
 };
 
+// Render the login window
 const createLoginWindow = (csrf) => {
     ReactDOM.render(
         <LoginWindow csrf={csrf} />,
@@ -79,6 +84,7 @@ const createLoginWindow = (csrf) => {
     );
 };
 
+// Renders the sign up window
 const createSignupWindow = (csrf) => {
     ReactDOM.render(
         <SignupWindow csrf={csrf} />,
@@ -86,6 +92,7 @@ const createSignupWindow = (csrf) => {
     );
 };
 
+// Hooks up buttons even for creating the different windows
 const setup = (csrf) => {
     const loginButton = document.querySelector("#loginNav");
     const signupButton = document.querySelector("#signUpNav");
@@ -105,12 +112,14 @@ const setup = (csrf) => {
     createLoginWindow(csrf);
 };
 
+// Gets session token
 const getToken = () => {
     sendAjax('GET', '/getToken', null, (result) => {
         setup(result.csrfToken);
     });
 };
 
+// Initializes page
 $(document).ready(function() {
     getToken();
 });

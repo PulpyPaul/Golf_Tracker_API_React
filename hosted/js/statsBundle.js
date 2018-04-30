@@ -1,27 +1,32 @@
 "use strict";
 
+// Templated object used for rendering a chart
 var ChartCanvas = function ChartCanvas(props) {
     return React.createElement("canvas", { id: "chart", width: "200", height: "200" });
 };
 
+// Renders a line chart to the document
 var createLineChartCanvas = function createLineChartCanvas(data) {
     ReactDOM.render(React.createElement(ChartCanvas, null), document.querySelector("#charts"));
 
     loadCardData("line");
 };
 
+// Renders a bar chart to the document
 var createBarChartCanvas = function createBarChartCanvas(data) {
     ReactDOM.render(React.createElement(ChartCanvas, null), document.querySelector("#charts"));
 
     loadCardData("bar");
 };
 
+// Renders a pie chart to the document
 var createPieChartCanvas = function createPieChartCanvas(data) {
     ReactDOM.render(React.createElement(ChartCanvas, null), document.querySelector("#charts"));
 
     loadCardData("pie");
 };
 
+// Creates a line chart
 var createLineChart = function createLineChart(ctx, data) {
 
     var labels = [];
@@ -52,6 +57,7 @@ var createLineChart = function createLineChart(ctx, data) {
     });
 };
 
+// Creates a bar chart
 var createBarChart = function createBarChart(ctx, data) {
 
     var labels = [];
@@ -82,6 +88,7 @@ var createBarChart = function createBarChart(ctx, data) {
     });
 };
 
+// Creates a pie chart
 var createPieChart = function createPieChart(ctx, data) {
 
     var labels = [];
@@ -112,6 +119,7 @@ var createPieChart = function createPieChart(ctx, data) {
     });
 };
 
+// Loads data and creates a chart based on a given type
 var loadCardData = function loadCardData(type) {
     sendAjax('GET', '/getCards', null, function (data) {
         var cardData = data.golfCards;
@@ -133,6 +141,7 @@ var loadCardData = function loadCardData(type) {
     });
 };
 
+// Hooks up buttons for loading different charts
 var setup = function setup(csrf) {
     var lineChartButton = document.querySelector("#lineChartBtn");
     var barChartButton = document.querySelector("#barChartBtn");
@@ -157,12 +166,14 @@ var setup = function setup(csrf) {
     });
 };
 
+// Get session token
 var getToken = function getToken() {
     sendAjax('GET', '/getToken', null, function (result) {
         setup(result.csrfToken);
     });
 };
 
+// Initializes document
 $(document).ready(function () {
     getToken();
 });
