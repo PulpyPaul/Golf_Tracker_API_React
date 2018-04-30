@@ -51,7 +51,9 @@ const createLineChart = (ctx, data) => {
     data: {
         labels: labels,
         datasets: [{
-            data: scoreData
+            data: scoreData,
+            borderColor: 'rgb(56,142,60)',
+            backgroundColor: 'rgb(232,245,233)',
         }]
     },
     options: {
@@ -61,6 +63,12 @@ const createLineChart = (ctx, data) => {
                     beginAtZero:true
                 }
             }]
+        },
+        legend: {
+            labels: {
+                fontColor: 'black',
+            },
+            display: false,
         }
     }
   });
@@ -82,7 +90,8 @@ const createBarChart = (ctx, data) => {
     data: {
         labels: labels,
         datasets: [{
-            data: scoreData
+            data: scoreData,
+            backgroundColor: 'rgb(56,142,60)',
         }]
     },
     options: {
@@ -92,6 +101,12 @@ const createBarChart = (ctx, data) => {
                     beginAtZero:true
                 }
             }]
+        },
+        legend: {
+            labels: {
+                fontColor: 'black',
+            },
+            display: false,
         }
     }
   });
@@ -113,7 +128,8 @@ const createPieChart = (ctx, data) => {
     data: {
         labels: labels,
         datasets: [{
-            data: scoreData
+            data: scoreData,
+            backgroundColor: 'rgb(56,142,60)',
         }]
     },
     options: {
@@ -123,6 +139,11 @@ const createPieChart = (ctx, data) => {
                     beginAtZero:true
                 }
             }]
+        },
+        legend: {
+            labels: {
+                fontColor: 'black',
+            },
         }
     }
   });

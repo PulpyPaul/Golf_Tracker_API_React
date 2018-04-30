@@ -42,7 +42,9 @@ var createLineChart = function createLineChart(ctx, data) {
         data: {
             labels: labels,
             datasets: [{
-                data: scoreData
+                data: scoreData,
+                borderColor: 'rgb(56,142,60)',
+                backgroundColor: 'rgb(232,245,233)'
             }]
         },
         options: {
@@ -52,6 +54,12 @@ var createLineChart = function createLineChart(ctx, data) {
                         beginAtZero: true
                     }
                 }]
+            },
+            legend: {
+                labels: {
+                    fontColor: 'black'
+                },
+                display: false
             }
         }
     });
@@ -73,7 +81,8 @@ var createBarChart = function createBarChart(ctx, data) {
         data: {
             labels: labels,
             datasets: [{
-                data: scoreData
+                data: scoreData,
+                backgroundColor: 'rgb(56,142,60)'
             }]
         },
         options: {
@@ -83,6 +92,12 @@ var createBarChart = function createBarChart(ctx, data) {
                         beginAtZero: true
                     }
                 }]
+            },
+            legend: {
+                labels: {
+                    fontColor: 'black'
+                },
+                display: false
             }
         }
     });
@@ -104,7 +119,8 @@ var createPieChart = function createPieChart(ctx, data) {
         data: {
             labels: labels,
             datasets: [{
-                data: scoreData
+                data: scoreData,
+                backgroundColor: 'rgb(56,142,60)'
             }]
         },
         options: {
@@ -114,6 +130,11 @@ var createPieChart = function createPieChart(ctx, data) {
                         beginAtZero: true
                     }
                 }]
+            },
+            legend: {
+                labels: {
+                    fontColor: 'black'
+                }
             }
         }
     });
