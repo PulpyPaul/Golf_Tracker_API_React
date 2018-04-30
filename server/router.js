@@ -12,6 +12,7 @@ const router = (app) => {
   app.post('/maker', mid.requiresLogin, controllers.GolfCard.make);
   app.get('/', mid.requiresSecure, mid.requiresLogout, controllers.Account.loginPage);
   app.get('/info', mid.requiresSecure, controllers.GolfCard.infoPage);
+  app.get('/stats', mid.requiresLogin, controllers.Stats.statsPage);
   app.get('/*', mid.requiresSecure, mid.requiresLogout, controllers.Account.notFoundPage);
 };
 
