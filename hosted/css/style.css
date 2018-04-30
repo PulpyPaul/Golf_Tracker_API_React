@@ -60,3 +60,13 @@ h1 {
 select {
     display: inline;
 }
+
+#charts {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.chartButtons {
+    margin-left: 20px;
+    margin-right: 20px;
+}
